@@ -12,7 +12,7 @@
         <h2>{{ s.name }}<a name="sponsor-{{ level }}-{{ s.id }}">&nbsp;</a></h2>
         <p class="site-link"><a href="{{ s.external_url }}">{{ s.external_url }}</a></p>
         <p></p>
-        {{ s.annotation }}
+        {{ s.annotation|safe }}
     </div>
 </div>
 {% endthumbnail %}
